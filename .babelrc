@@ -1,8 +1,8 @@
 {
-  "presets": [
-    "latest"
-  ],
-  "plugins":[
-    ["transform-react-jsx", { "pragma":"h" }]
-  ]
+	"presets": [
+		"latest"
+	],
+	"plugins":[
+		["transform-react-jsx", { "pragma":"h" }]
+	]
 }

@@ -1,5 +1,5 @@
 export default {
-  loader: [
-    'ui-loader',
-  ],
+	loader: [
+		'ui-loader',
+	],
 };

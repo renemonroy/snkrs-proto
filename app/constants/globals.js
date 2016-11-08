@@ -1,3 +1,3 @@
 export default {
-  LOADER_PATH: 'https://www.nike.com/snkrs/img/spinner-infinite.gif',
+	LOADER_PATH: 'https://www.nike.com/snkrs/img/spinner-infinite.gif',
 };

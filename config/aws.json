@@ -1,6 +1,6 @@
 {
-  "ACCESS_KEY_ID": "KEY",
-  "SECRET_ACCESS_KEY": "SECRET",
-  "REGION": "us-east-1",
-  "BUCKET": "bucket-name"
+	"ACCESS_KEY_ID": "KEY",
+	"SECRET_ACCESS_KEY": "SECRET",
+	"REGION": "us-east-1",
+	"BUCKET": "bucket-name"
 }

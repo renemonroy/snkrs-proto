@@ -2,7 +2,7 @@
 import { string, number } from 'proptypes';
 
 export const proptTypes = {
-  src: string,
-  width: number,
-  height: number,
+	src: string,
+	width: number,
+	height: number,
 };

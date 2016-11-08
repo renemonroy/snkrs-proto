@@ -1,5 +1,5 @@
 export default {
-  column: [
-    'ncss-col-sm-12',
-  ],
+	column: [
+		'ncss-col-sm-12',
+	],
 };

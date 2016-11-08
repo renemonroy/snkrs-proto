@@ -1,7 +1,7 @@
 import { h, render } from 'preact';
-import Thread from './components/thread';
+import Thread from './components/views/thread';
 
 const App = () =>
-  <div><Thread /></div>;
+	<div><Thread /></div>;
 
 render(<App />, document.body);

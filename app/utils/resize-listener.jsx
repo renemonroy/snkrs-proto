@@ -12,49 +12,49 @@ import { debouncer } from './js-helpers';
  */
 const defaultConfig = { debounceTime: 300 };
 const resizeListener = (c = {}) => (WrappedComponent) => {
-  const config = Object.assign({}, defaultConfig, c);
+	const config = Object.assign({}, defaultConfig, c);
 
-  class ResizeListener extends Component {
+	class ResizeListener extends Component {
 
-    constructor(props) {
-      super(props);
-      this.state = {
-        viewport: {
-          width: window.innerWidth,
-          height: window.innerHeight,
-        },
-      };
-      this.handleWindowResize = this.handleWindowResize.bind(this);
-    }
+		constructor(props) {
+			super(props);
+			this.state = {
+				viewport: {
+					width: window.innerWidth,
+					height: window.innerHeight,
+				},
+			};
+			this.handleWindowResize = this.handleWindowResize.bind(this);
+		}
 
-    componentWillMount() {
-      window.addEventListener('resize', this.handleWindowResize);
-      window.addEventListener('orientationchange', this.handleWindowResize);
-    }
+		componentWillMount() {
+			window.addEventListener('resize', this.handleWindowResize);
+			window.addEventListener('orientationchange', this.handleWindowResize);
+		}
 
-    componentWillUnmount() {
-      window.removeEventListener('resize', this.handleWindowResize);
-      window.removeEventListener('orientationchange', this.handleWindowResize);
-    }
+		componentWillUnmount() {
+			window.removeEventListener('resize', this.handleWindowResize);
+			window.removeEventListener('orientationchange', this.handleWindowResize);
+		}
 
-    @debouncer(config.debounceWindowResize)
-    handleWindowResize() {
-      const { viewport } = this.state;
-      if (viewport.width !== window.innerWidth || viewport.height !== window.innerHeight) {
-        this.setState({
-          viewport: { width: window.innerWidth, height: window.innerHeight },
-        });
-      }
-    }
+		@debouncer(config.debounceWindowResize)
+		handleWindowResize() {
+			const { viewport } = this.state;
+			if (viewport.width !== window.innerWidth || viewport.height !== window.innerHeight) {
+				this.setState({
+					viewport: { width: window.innerWidth, height: window.innerHeight },
+				});
+			}
+		}
 
-    render() {
-      const { viewport } = this.state;
-      return <WrappedComponent {...this.props} viewport={viewport} />;
-    }
+		render() {
+			const { viewport } = this.state;
+			return <WrappedComponent {...this.props} viewport={viewport} />;
+		}
 
-  }
+	}
 
-  return hoistStatics(ResizeListener, WrappedComponent);
+	return hoistStatics(ResizeListener, WrappedComponent);
 };
 
 export default resizeListener;

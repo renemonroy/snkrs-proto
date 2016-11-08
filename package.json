@@ -1,64 +1,64 @@
 {
-  "name": "@nike/snkrs-proto",
-  "version": "0.0.1",
-  "description": "Proof of concept for a snkrs thread page.",
-  "private": false,
-  "publishConfig": {
-    "registry": "http://artifactory.nike.com/artifactory/api/npm/npm-local"
-  },
-  "scripts": {
-    "clean": "rm -rf ./build",
-    "dev": "webpack-dev-server --config webpack.dev.config.js",
-    "build": "webpack --progress --config webpack.build.config.js",
-    "serve": "http-server ./build -p 3000",
-    "deploy": "DEPLOY=1 npm run build",
-    "start": "npm run dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://RMonr1@bitbucket.nike.com/scm/~rmonr1/snkrs.git"
-  },
-  "keywords": [
-    "preact",
-    "nui"
-  ],
-  "author": "renemonroy",
-  "license": "MIT",
-  "bugs": {
-    "url": "http://bitbucket.nike.com/users/rmonr1/repos/snkrs/browse"
-  },
-  "homepage": "http://bitbucket.nike.com/usrs/rmonr1/repos/snkrs/browse/README.md",
-  "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-eslint": "^7.1.0",
-    "babel-loader": "^6.2.7",
-    "babel-plugin-transform-react-jsx": "^6.8.0",
-    "babel-preset-latest": "^6.16.0",
-    "clean-webpack-plugin": "^0.1.14",
-    "css-loader": "^0.25.0",
-    "eslint": "^3.9.1",
-    "eslint-config-airbnb": "^12.0.0",
-    "eslint-config-airbnb-base": "^9.0.0",
-    "eslint-plugin-import": "^2.1.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "^6.5.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.9.0",
-    "html-webpack-plugin": "^2.24.1",
-    "proptypes": "^0.14.3",
-    "react-hot-loader": "^3.0.0-beta.6",
-    "style-loader": "^0.13.1",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^2.3.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2",
-    "webpack-s3-plugin": "^0.9.0"
-  },
-  "dependencies": {
-    "hoist-non-react-statics": "^1.2.0",
-    "preact": "^6.4.0",
-    "react-redux": "^4.4.5",
-    "redux": "^3.6.0"
-  }
+	"name": "@nike/snkrs-proto",
+	"version": "0.0.1",
+	"description": "Proof of concept for a snkrs thread page.",
+	"private": false,
+	"publishConfig": {
+		"registry": "http://artifactory.nike.com/artifactory/api/npm/npm-local"
+	},
+	"scripts": {
+		"clean": "rm -rf ./build",
+		"dev": "webpack-dev-server --config webpack.dev.config.js",
+		"build": "webpack --progress --config webpack.build.config.js",
+		"serve": "http-server ./build -p 3000",
+		"deploy": "DEPLOY=1 npm run build",
+		"start": "npm run dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "http://RMonr1@bitbucket.nike.com/scm/~rmonr1/snkrs.git"
+	},
+	"keywords": [
+		"preact",
+		"nui"
+	],
+	"author": "renemonroy",
+	"license": "MIT",
+	"bugs": {
+		"url": "http://bitbucket.nike.com/users/rmonr1/repos/snkrs/browse"
+	},
+	"homepage": "http://bitbucket.nike.com/usrs/rmonr1/repos/snkrs/browse/README.md",
+	"devDependencies": {
+		"babel-cli": "^6.18.0",
+		"babel-eslint": "^7.1.0",
+		"babel-loader": "^6.2.7",
+		"babel-plugin-transform-react-jsx": "^6.8.0",
+		"babel-preset-latest": "^6.16.0",
+		"clean-webpack-plugin": "^0.1.14",
+		"css-loader": "^0.25.0",
+		"eslint": "^3.9.1",
+		"eslint-config-airbnb": "^12.0.0",
+		"eslint-config-airbnb-base": "^9.0.0",
+		"eslint-plugin-import": "^2.1.0",
+		"eslint-plugin-jsx-a11y": "^2.2.3",
+		"eslint-plugin-react": "^6.5.0",
+		"extract-text-webpack-plugin": "^1.0.1",
+		"file-loader": "^0.9.0",
+		"html-webpack-plugin": "^2.24.1",
+		"proptypes": "^0.14.3",
+		"react-hot-loader": "^3.0.0-beta.6",
+		"style-loader": "^0.13.1",
+		"stylus": "^0.54.5",
+		"stylus-loader": "^2.3.1",
+		"url-loader": "^0.5.7",
+		"webpack": "^1.13.3",
+		"webpack-dev-server": "^1.16.2",
+		"webpack-s3-plugin": "^0.9.0"
+	},
+	"dependencies": {
+		"hoist-non-react-statics": "^1.2.0",
+		"preact": "^6.4.0",
+		"react-redux": "^4.4.5",
+		"redux": "^3.6.0"
+	}
 }

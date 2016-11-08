@@ -13,8 +13,12 @@
     }
   },
   "rules": {
+    "no-tabs": [0],
+    "indent": [0],
     "no-console": 0,
     "no-unused-vars": [0, { "varsIgnorePattern": "^h$" }],
+    "react/jsx-indent": [0],
+    "react/jsx-indent-props": [0],
     "import/prefer-default-export": [1],
     "react/react-in-jsx-scope": [0],
     "react/prop-types": [0],
