@@ -1,0 +1,9 @@
+export const ThreadActionType = {
+  BUY: 'BUY',
+  LIKE: 'LIKE',
+  NOTIFY: 'NOTIFY',
+  PLAY_VIDEO: 'PLAY_VIDEO',
+  SELECT_RELATED: 'SELECT_RELATED',
+  SELECT_TAG: 'SELECT_TAG',
+  SHARE: 'SHARE',
+};
