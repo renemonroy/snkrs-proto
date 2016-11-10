@@ -1,5 +1,5 @@
 import { h, Component } from 'preact';
-import { connect } from 'react-redux';
+import { connect } from 'preact-redux';
 import { ThreadActions } from '../../../actions';
 import Card from '../template';
 import className from '../../../utils/classname';

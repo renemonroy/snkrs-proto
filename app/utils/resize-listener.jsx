@@ -37,7 +37,7 @@ const resizeListener = (c = {}) => (WrappedComponent) => {
 			window.removeEventListener('orientationchange', this.handleWindowResize);
 		}
 
-		@debouncer(config.debounceWindowResize)
+		@debouncer(config.debounceTime)
 		handleWindowResize() {
 			const { viewport } = this.state;
 			if (viewport.width !== window.innerWidth || viewport.height !== window.innerHeight) {

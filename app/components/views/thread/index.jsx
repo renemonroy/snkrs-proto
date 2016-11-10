@@ -19,6 +19,7 @@ const Thread = ({ thread, tags }) => (
 				{tagsList(tags)}
 			</div>)
 		}
+		<p>Testing...</p>
 	</div>
 );
 

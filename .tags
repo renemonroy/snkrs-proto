@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+clear	/Users/rmonr1/Development/Nike/snkrs-proto/app/utils/js-helpers.js	/^	wrapper.clear = function clear() {$/;"	function
+debounceMethod	/Users/rmonr1/Development/Nike/snkrs-proto/app/utils/js-helpers.js	/^	return function debounceMethod(target, key, { enumerable, value }) {$/;"	function
+debouncer	/Users/rmonr1/Development/Nike/snkrs-proto/app/utils/js-helpers.js	/^export const debouncer = function debouncer(duration = 300) {$/;"	function
+export	/Users/rmonr1/Development/Nike/snkrs-proto/app/utils/js-helpers.js	/^};$/;"	function
+function.wrapper	/Users/rmonr1/Development/Nike/snkrs-proto/app/utils/js-helpers.js	/^	function wrapper(...args) {$/;"	function
+getter	/Users/rmonr1/Development/Nike/snkrs-proto/app/utils/js-helpers.js	/^			get: function getter() {$/;"	function
+wrapper	/Users/rmonr1/Development/Nike/snkrs-proto/app/utils/js-helpers.js	/^	function wrapper(...args) {$/;"	function
+wrapper.clear	/Users/rmonr1/Development/Nike/snkrs-proto/app/utils/js-helpers.js	/^	}$/;"	function

@@ -1,1 +1,3 @@
-export * as ThreadActions from './thread';
+import ThreadActions from './thread';
+
+export default { ThreadActions };

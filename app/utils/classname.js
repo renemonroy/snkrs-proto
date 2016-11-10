@@ -3,7 +3,7 @@
  * no matter the type of inputs.
  */
 const hasOwn = {}.hasOwnProperty;
-export default function cx(...args) {
+const className = (...args) => {
 	const classes = [];
 	const argsSize = args.length;
 	for (let i = 0; i < argsSize; i += 1) {
@@ -13,7 +13,7 @@ export default function cx(...args) {
 			if (argType === 'string' || argType === 'number') {
 				classes.push(arg);
 			} else if (Array.isArray(arg)) {
-				classes.push(this.cx.apply(null, arg));
+				classes.push(className(...arg));
 			} else if (argType === 'object') {
 				Object.keys(arg).forEach((key) => {
 					if (hasOwn.call(arg, key) && arg[key]) {
@@ -24,4 +24,6 @@ export default function cx(...args) {
 		}
 	}
 	return classes.join(' ');
-}
+};
+
+export default className;

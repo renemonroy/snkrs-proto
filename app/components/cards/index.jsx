@@ -1,2 +1,4 @@
-export Relations from './relations';
-export Tags from './tags';
+import Relations from './relations';
+import Tags from './tags';
+
+export default { Relations, Tags };
